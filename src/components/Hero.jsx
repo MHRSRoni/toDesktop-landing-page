@@ -1,11 +1,24 @@
-import React from "react";
+import arrow from "@/assets/asset 2.svg";
+import line from "@/datas/companies.json";
+import React, { useRef } from "react";
 import {
   FaArrowRight,
   FaFileCode,
   FaHandBackFist,
   FaLaptop,
 } from "react-icons/fa6";
+import { useLineMoving } from "../hooks/useLineMoving";
+import CompanyCard from "./CompanyCard";
 const Hero = () => {
+  const line01 = useRef(null);
+  const line02 = useRef(null);
+  const line03 = useRef(null);
+
+  // useCallback(()=>useLineMoving(line01, true, 0.8, 48*4), [line01.current])
+  const [style01] = useLineMoving(line01, true, 0.15, -48 * 4);
+  const [style02] = useLineMoving(line02, false, 0.15, 32 * 4);
+  const [style03] = useLineMoving(line03, true, 0.15, -48 * 4);
+
   return (
     <div
       data-role="hero"
@@ -28,7 +41,7 @@ const Hero = () => {
         </div>
         <div
           data-role="hero-feature"
-          className="my-6 hidden items-center  gap-8 sm:flex text-gray-500"
+          className="my-6 hidden items-center  gap-8 text-gray-500 sm:flex"
         >
           <div className="flex items-center gap-2">
             <FaFileCode className="text-sm" /> <span>Code Optional</span>
@@ -59,6 +72,47 @@ const Hero = () => {
           <button className="rounded-lg border border-gray-400 px-8  py-3 font-semibold hover:border-gray-800 ">
             Read Docs
           </button>
+        </div>
+      </div>
+      <div data-role="companies" className="mt-16 flex flex-col items-center">
+        <div className="flex items-center gap-2">
+          <img src={arrow} className="translate-y-2" />
+          <p className="font-semibold text-gray-800">
+            APPS POWERED BY TODESKTOP
+          </p>
+          <img src={arrow} className="translate-y-2 -scale-x-100" />
+        </div>
+        <div data-role="line-container" className="mt-8 flex flex-col gap-4">
+          <div
+            data-role="line01"
+            className="flex -translate-x-48 gap-4 transition-transform  ease-linear"
+            ref={line01}
+            style={style01}
+          >
+            {line.line1.map((item, index) => (
+              <CompanyCard key={index} img={item.img} name={item.name} />
+            ))}
+          </div>
+          <div
+            data-role="line02"
+            className="flex -translate-x-32 gap-4 transition-transform  ease-linear"
+            ref={line02}
+            style={style02}
+          >
+            {line.line2.map((item, index) => (
+              <CompanyCard key={index} img={item.img} name={item.name} />
+            ))}
+          </div>
+          <div
+            data-role="line03"
+            className="flex -translate-x-48 gap-4 transition-transform ease-linear  md:hidden"
+            ref={line03}
+            style={style03}
+          >
+            {line.line3.map((item, index) => (
+              <CompanyCard key={index} img={item.img} name={item.name} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between p-3 ">
+    <nav className="flex items-center justify-between p-3 fixed top-0 left-0 right-0 bg-white shadow-lg z-20">
       <div data-role="logo" className="flex flex-1 items-center gap-2">
         <img src={logo} alt="logo" />
         <p className="font-heading text-lg">ToDesktop</p>

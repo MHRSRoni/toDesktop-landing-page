@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="mt-20">
         <Hero />
         <Section01 />
         <Section02 />

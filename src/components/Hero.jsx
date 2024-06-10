@@ -1,5 +1,5 @@
 import arrow from "@/assets/asset 2.svg";
-import line from "@/datas/companies.json";
+import line from "@/datas/companies.js";
 import React, { useRef } from "react";
 import {
   FaArrowRight,

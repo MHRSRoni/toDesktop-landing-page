@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa6";
 import StepButton from "./StepButton";
+import asset27 from '/src/assets/asset 27.svg'
 const Section01 = () => {
   return (
     <section data-role="section01" className="section container mt-32">
@@ -59,7 +60,7 @@ const Section01 = () => {
               </ul>
             </div>
             <div className="flex flex-1 pt-12 lg:w-1/2 lg:justify-end justify-center">
-              <img src="src/assets/asset 27.svg" alt="" />
+              <img src={asset27} alt="" />
             </div>
           </div>
         ))}

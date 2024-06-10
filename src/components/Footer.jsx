@@ -1,4 +1,5 @@
 import logo from "@/assets/asset 0.png";
+import asset37 from "/src/assets/asset 37.svg"
 import React from "react";
 import { FaGithub, FaTwitter } from "react-icons/fa6";
 const Footer = () => {
@@ -17,7 +18,7 @@ const Footer = () => {
       </section>
       <div className=" flex flex-col items-center justify-center mt-12 mb-24 gap-4">
         <div className="flex items-center gap-2 text-gray-600  text-sm">
-          <img src="src/assets/asset 37.svg" className="h-4 w-4" />A Y
+          <img src={asset37} className="h-4 w-4" />A Y
           Combinator company.
         </div>
         <p className="text-gray-400 text-sm">© 2024 ToDesktop, Inc. All rights reserved.</p>

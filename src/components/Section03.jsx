@@ -1,5 +1,9 @@
 import assest44 from "@/assets/asset 32.svg";
 import React from "react";
+import asset34 from "/src/assets/asset 34.png"
+import asset33 from "/src/assets/asset 33.jpeg"
+import asset35 from "/src/assets/asset 35.png"
+import asset36 from "/src/assets/asset 36.jpeg"
 import { FaCheck, FaCode, FaDownload } from "react-icons/fa6";
 const Section03 = () => {
   const data01 = [
@@ -40,7 +44,7 @@ const Section03 = () => {
           </p>
           <div className="flex gap-4">
             <img
-              src="src/assets/asset 33.jpeg"
+              src={asset33}
               alt=""
               className="rounded-full"
             />
@@ -53,7 +57,7 @@ const Section03 = () => {
           </div>
         </div>
         <div className="self-end pl-8">
-          <img src="src/assets/asset 34.png" alt="" className="seld-end" />
+          <img src={asset34} alt="" className="seld-end" />
         </div>
       </div>
       <div className="my-8 flex flex-col gap-4 lg:flex-row">
@@ -77,14 +81,14 @@ const Section03 = () => {
               <div className="flex items-center">
                 <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border">
                   <img
-                    src="src/assets/asset 35.png"
+                    src={asset35}
                     alt=""
                     className="min-h-16 min-w-16"
                   />
                 </div>
                 <div className="h-12 w-12 -translate-x-2 overflow-hidden rounded-full border border-white">
                   <img
-                    src="src/assets/asset 36.jpeg"
+                    src={asset36}
                     alt=""
                     className="h-12 w-12 rounded-full"
                   />
@@ -119,14 +123,14 @@ const Section03 = () => {
               <div className="flex items-center">
                 <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border">
                   <img
-                    src="src/assets/asset 35.png"
+                    src={asset35}
                     alt=""
                     className="min-h-16 min-w-16"
                   />
                 </div>
                 <div className="h-12 w-12 -translate-x-2 overflow-hidden rounded-full border border-white">
                   <img
-                    src="src/assets/asset 36.jpeg"
+                    src={asset36}
                     alt=""
                     className="h-12 w-12 rounded-full"
                   />
@@ -161,14 +165,14 @@ const Section03 = () => {
               <div className="flex items-center">
                 <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border">
                   <img
-                    src="src/assets/asset 35.png"
+                    src={asset35}
                     alt=""
                     className="min-h-16 min-w-16"
                   />
                 </div>
                 <div className="h-12 w-12 -translate-x-2 overflow-hidden rounded-full border border-white">
                   <img
-                    src="src/assets/asset 36.jpeg"
+                    src={asset36}
                     alt=""
                     className="h-12 w-12 rounded-full"
                   />
@@ -205,7 +209,7 @@ const Section03 = () => {
           </p>
         </div>
         <div className="lg:flex-1">
-          <img src="src/assets/asset 34.png" alt="" />
+          <img src={asset34} alt="" />
         </div>
       </div>
     </section>

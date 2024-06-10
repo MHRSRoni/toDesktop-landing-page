@@ -1,5 +1,8 @@
-import React from "react";
-
+import React from "react"; 
+import asset28 from "/src/assets/asset 28.png"
+import asset29 from "/src/assets/asset 29.png"
+import asset30 from "/src/assets/asset 30.png"
+import asset31 from "/src/assets/asset 31.png"
 const Section02 = () => {
   return (
     <section className="section container flex flex-col gap-8">
@@ -17,7 +20,7 @@ const Section02 = () => {
             className="flex flex-1 flex-col h-full items-center  gap-8 rounded-xl border border-gray-300 bg-gray-50 p-6 group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50"
           >
             <h6 className="font-heading text-2xl ">Native Notifications</h6>
-            <img src="src/assets/asset 28.png" alt="" />
+            <img src={asset28} alt="" />
           </div>
         </div>
         <div
@@ -33,7 +36,7 @@ const Section02 = () => {
               We’ll ensure the underlying browser is up to date and deliver
               performance improvements, security patches, & additional features.
             </p>
-            <img src="src/assets/asset 29.png" alt="" />
+            <img src={asset29} alt="" />
           </div>
         </div>
         <div
@@ -46,7 +49,7 @@ const Section02 = () => {
           >
             <h6 className="font-heading text-2xl ">Native Notifications</h6>
 
-            <img src="src/assets/asset 30.png" alt="" />
+            <img src={asset30} alt="" />
           </div>
         </div>
         <div
@@ -62,7 +65,7 @@ const Section02 = () => {
               We’ll ensure the underlying browser is up to date and deliver
               performance improvements, security patches, & additional features.
             </p>
-            <img src="src/assets/asset 31.png" alt="" />
+            <img src={asset31} alt="" />
           </div>
         </div>
         <div
@@ -74,7 +77,7 @@ const Section02 = () => {
             className="flex flex-1 flex-col h-full items-center  gap-8 rounded-xl border border-gray-300 bg-gray-50 p-6 group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50"
           >
             <h6 className="font-heading text-2xl ">Native Notifications</h6>
-            <img src="src/assets/asset 28.png" alt="" />
+            <img src={asset28} alt="" />
           </div>
         </div>
         <div
@@ -90,7 +93,7 @@ const Section02 = () => {
               We’ll ensure the underlying browser is up to date and deliver
               performance improvements, security patches, & additional features.
             </p>
-            <img src="src/assets/asset 29.png" alt="" />
+            <img src={asset29} alt="" />
           </div>
         </div>
       </div>
